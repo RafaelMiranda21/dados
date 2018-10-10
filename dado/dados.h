@@ -1,5 +1,6 @@
 #ifndef DADOS_H
 #define DADOS_H
+#include<iostream>
 using namespace std;
 
 class dados
@@ -17,6 +18,7 @@ public:
     void setano(int ano);
     int getano();
     int validadata();
+    void setcpf();
 };
 
 #endif // DADOS_H

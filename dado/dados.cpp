@@ -2,7 +2,7 @@
 
 dados::dados()
 {
-  cpf("");
+  string cpf("");
   dia=mes=ano;
 
 }
@@ -24,7 +24,7 @@ void dados::setmes(int mes)
 
 void dados::setano(int ano)
 {
-    if(ano < 1870 || anos >2018)
+    if(ano < 1870 || ano >2018)
         cout<<"ano invalido!";
     else
         this->ano = ano;
@@ -75,4 +75,11 @@ int dados::validadata()
      {
                     return 0;
      }
+}
+
+void dados::setcpf()
+{
+    getline(cin , cpf);
+
+
 }
